@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_superheroes
+    description: Demographics about each superhero such as name, hair color, height and weight. 
+    columns:
+      - name: name
+        tests:
+          - not_null
+      - name: height
+        tests:
+          - positive_values
+      - name: weight
+        tests:
+          - positive_values
+  - name: stg_addresses
+    description: Data about each address of customers in the database.
+  - name: stg_events
+    description: Demographics about events in the database.
+  - name: stg_order_items
+    description: Demographics about each item of customers already ordered in the database.
+  - name: stg_orders
+    description: Demographics about each order of customers in the database.
+  - name: stg_products
+    description: Demographics about each product on offer in the database.
+  - name: stg_promos
+    description: Demographics about available promotions for customers in the database.
+  - name: stg_users
+    description: Demographics about each user in the database.

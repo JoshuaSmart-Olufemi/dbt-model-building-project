@@ -1,0 +1,67 @@
+ id  |              address_id              |           address            | zipcode |        state         |    country    
+-----+--------------------------------------+------------------------------+---------+----------------------+---------------
+   1 | 299ec70d-f1e7-4807-9d0e-6fd86e3ebcab | 220 Artisan Park             |   92056 | California           | United States
+   2 | 957af504-cee3-4f3a-8f5a-eb5a5bd23b16 | 85717 Carberry Street        |   85062 | Arizona              | United States
+   3 | ff8d0181-f21e-4235-bf7c-e5f917c6b55f | 5423 Tennyson Alley          |   21282 | Maryland             | United States
+   4 | b5d85492-b403-4f52-a42b-4363716f4cfb | 4 Sutherland Alley           |   62723 | Illinois             | United States
+   5 | e71bd22e-7711-405f-9d7e-2a7824d68a6a | 226 Sherman Pass             |   33169 | Florida              | United States
+   6 | cf12c9e1-2f85-47d7-b91e-2b0134b5ab2b | 292 Chive Point              |   24029 | Virginia             | United States
+   7 | 959fc946-4baf-457f-8290-2a7d0e7fc3f7 | 6817 Red Cloud Lane          |   19172 | Pennsylvania         | United States
+   8 | 1c7f374e-04f5-4739-b791-e358d7cdd65a | 3816 Brown Lane              |   35220 | Alabama              | United States
+   9 | f79a5736-1e58-436a-aca9-bc4cf21fef09 | 3 Miller Point               |   75044 | Texas                | United States
+  10 | 28d7931e-b044-49f6-ac58-fabf1151055a | 3 Harbort Hill               |   90805 | California           | United States
+  11 | 280bb1a8-d59e-4ada-b479-a4d47163130e | 40 Farragut Crossing         |   25716 | West Virginia        | United States
+  12 | 609af927-16f8-450a-ade4-1e06724e9feb | 78 Donald Crossing           |   23464 | Virginia             | United States
+  13 | a4fbed7c-7bdd-465d-bdcd-ab0c4c68f300 | 2 Evergreen Hill             |   24009 | Virginia             | United States
+  14 | 53983579-4a64-432a-941e-c3d9c886bd77 | 59 Victoria Road             |   80005 | Colorado             | United States
+  15 | 4d9d28c3-6e38-48e7-9960-f244a3e72d9d | 121 Meadow Ridge Drive       |   22093 | Virginia             | United States
+  16 | 18e90fce-7517-42c3-bd20-7028608da7df | 410 Pierstorff Trail         |   14263 | New York             | United States
+  17 | 302bfd3c-795c-4eef-b1e7-627897f6861e | 8 Bluejay Parkway            |   20046 | District of Columbia | United States
+  18 | a6dd4d60-8756-4967-8dd6-e7deaa538bc6 | 181 Kipling Street           |   52804 | Iowa                 | United States
+  19 | 6155419f-3b93-43ef-a11a-b1dece0e7a37 | 1 Sullivan Plaza             |   35263 | Alabama              | United States
+  20 | aa61ded6-4588-48dd-9759-1bd36ec5d787 | 90989 Pankratz Terrace       |   14604 | New York             | United States
+  21 | 1a61a755-cf38-43cd-be0d-7babfe8aaa26 | 4 Stone Corner Way           |    6912 | Connecticut          | United States
+  22 | a8fa71b5-5d47-410f-b0c1-a16d20a05937 | 7 Corry Parkway              |   94705 | California           | United States
+  23 | 63260a1e-947f-42fe-b11f-12cea08830b6 | 19020 Clyde Gallagher Center |   77240 | Texas                | United States
+  24 | 63fdd7ef-51f3-49e2-bdf2-22d46f68aacf | 56 Iowa Point                |   44310 | Ohio                 | United States
+  25 | 7ae529bf-b9d0-47ee-acd0-d55e0e6a0d32 | 573 Arizona Circle           |   76205 | Texas                | United States
+  26 | 91cdd4ef-b40f-48e0-b2f3-95b8620955eb | 49407 Carey Crossing         |   85205 | Arizona              | United States
+  27 | 1ceb9167-9852-45a7-8109-57b077d8a2e0 | 1006 Brentwood Alley         |   98417 | Washington           | United States
+  28 | c8e06217-c625-471f-8cdc-88c3e39f6b2c | 40401 Sommers Point          |   27455 | North Carolina       | United States
+  29 | 4934ebb8-8950-4bd0-87ba-a1532716e54d | 47039 Mesta Lane             |   90015 | California           | United States
+  30 | 89f9c593-3ac8-4f50-ab01-01b4a2e27eaa | 5 Menomonie Center           |   79940 | Texas                | United States
+  31 | 4747877b-fb7d-4ec1-b42d-6b8f8707c984 | 4447 Montana Junction        |   59105 | Montana              | United States
+  32 | 25caf41f-ca5a-4cbb-bc2c-b5d9fcebe66b | 6612 Barnett Court           |   79165 | Texas                | United States
+  33 | 131db634-55f8-4fb6-98f3-624ec32a94b8 | 99100 Oak Valley Circle      |   76011 | Texas                | United States
+  34 | df4fbdd5-d7f9-4711-b1b6-2517808df91a | 4106 Beilfuss Park           |   20551 | District of Columbia | United States
+  35 | 71aa45c1-ce05-43b5-a52a-6145ab435c69 | 6868 Columbus Parkway        |    2305 | Massachusetts        | United States
+  36 | d2fbe240-64ac-4feb-a360-8a9197f8b8ae | 46922 Nobel Point            |   89087 | Nevada               | United States
+  37 | 62e197da-130d-48f9-95d1-8f67b5be1784 | 3 Eagan Street               |   75231 | Texas                | United States
+  38 | 04ac071b-da39-463c-ac62-e996547407c9 | 13 Derek Plaza               |   85271 | Arizona              | United States
+  39 | bfee6b0f-d8ea-4626-9786-a0e1497bd07b | 35 Fair Oaks Lane            |   32405 | Florida              | United States
+  40 | e080edb5-bf24-43dd-a9cd-f1419a240fa7 | 11 Kim Lane                  |   65218 | Missouri             | United States
+  41 | 76f13d82-1273-4144-8a41-45fc836c3540 | 86 Sycamore Place            |   94105 | California           | United States
+  42 | 0314fc1b-d832-4562-bda4-7dbe09d2868c | 3429 Shopko Court            |   22119 | Virginia             | United States
+  43 | cdac5d06-ad99-49f6-abb0-df87017dccfd | 8580 Blue Bill Park Place    |   80279 | Colorado             | United States
+  44 | 874cd4e2-37d0-4e30-9773-0f9dcfa26838 | 4 Anthes Crossing            |   33261 | Florida              | United States
+  45 | 0c9ee6c6-4869-40aa-afd3-087cee73c051 | 52 Ohio Alley                |   49018 | Michigan             | United States
+  46 | 68a5c312-2205-45ec-ace1-166ff3f4b572 | 24 Arizona Lane              |   46221 | Indiana              | United States
+  47 | f2dfb1e6-43bf-49ac-8d17-e1498079e08b | 051 Hanover Junction         |   60505 | Illinois             | United States
+  48 | 47e8e06d-0612-4af0-89ed-48deafa4857a | 9 Green Circle               |   79165 | Texas                | United States
+  49 | 89ab3752-1119-4f9e-9766-0d6883501434 | 677 Milwaukee Point          |   55407 | Minnesota            | United States
+  50 | 1d3482c6-e56b-47df-91f8-4b32bc908b2b | 75 Brown Street              |   94975 | California           | United States
+  51 | f785f0ae-f5d7-49a8-a4b7-95b470f7cb63 | 2 Logan Alley                |   22405 | Virginia             | United States
+  52 | 4983fb6f-b53f-4022-95ca-d17eb4974093 | 0 Hoffman Court              |   48206 | Michigan             | United States
+  53 | 6d31baf0-1ecd-42e0-b32f-645d084c3109 | 1080 1st Plaza               |    2203 | Massachusetts        | United States
+  54 | 2466034c-a22b-4b0e-95af-2d34160779bc | 567 Crownhardt Court         |   31217 | Georgia              | United States
+  55 | 2c7bd191-c7c9-45d3-9dd0-612320bd9817 | 6585 Warbler Junction        |   47732 | Indiana              | United States
+  56 | 902bcb47-051b-4375-9dc0-485b3172b89b | 59 Chinook Center            |   92160 | California           | United States
+  57 | 2b514c51-d01b-4d26-be99-4a1fa99bf322 | 4 Sutherland Hill            |   20508 | District of Columbia | United States
+  58 | 9285957a-e1fd-4205-960e-f739a9c7dfd2 | 320 Rockefeller Point        |   91328 | California           | United States
+  59 | dfe1082c-cb08-497f-9af9-9a7cf0aa70b5 | 85988 Glacier Hill Place     |   80940 | Colorado             | United States
+  60 | fe794a2d-aa57-4ef1-8948-e0491e1ca3c1 | 98 Gale Road                 |   28230 | North Carolina       | United States
+  61 | fc458964-6e05-46e7-8717-c8c7798e78aa | 110 Fairfield Park           |   45296 | Ohio                 | United States
+  62 | 56078786-b8da-47a0-8a7c-befda74f8cd8 | 481 Petterle Point           |   94660 | California           | United States
+  63 | 26a10637-982b-4f9d-a243-de56b194427e | 16735 Evergreen Street       |   89505 | Nevada               | United States
+  64 | 06dd400a-9d9e-48f3-9312-5a41f6038c8e | 891 Merchant Place           |   21229 | Maryland             | United States
+  65 |

@@ -1,0 +1,73 @@
+version: 2
+
+sources:
+  - name: tutorial # name of the source 
+    schema: public # this is the schema our raw data lives in
+    database: dbt # this is the name of our database
+
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+
+    freshness:
+      warn_after: {count: 24, period: hour}
+      error_after: {count: 48, period: hour}
+
+    tables:
+      - name: superheroes 
+        loaded_at_field: created_at
+        description: >
+          Contains demographic information about each superhero
+
+      - name: addresses
+        description: a source file with the adressess, zipcodes, states and country
+        schema: public
+        database: dbt 
+        tags:
+         - ecom
+      - name: events
+        description: a source file with the adressess, zipcodes, states and country
+        schema: public
+        database: dbt 
+
+        tags:
+          - ecom
+      - name: order_items
+        description: a source file with the adressess, zipcodes, states and country
+        schema: public
+        database: dbt 
+
+        tags:
+          - ecom
+      - name: orders
+        description: a source file with the adressess, zipcodes, states and country
+        schema: public
+        database: dbt 
+    
+
+        tags:
+         - ecom
+      - name: products
+        description: a source file with the adressess, zipcodes, states and country
+        schema: public
+        database: dbt 
+    
+
+        tags:
+         - ecom
+      - name: promos
+        description: a source file with the adressess, zipcodes, states and country
+        schema: public
+        database: dbt 
+    
+        tags:
+         - ecom
+      - name: users
+        description: a source file with the adressess, zipcodes, states and country
+        schema: public
+        database: dbt 
+    
+        tags:
+          - ecom
+  
