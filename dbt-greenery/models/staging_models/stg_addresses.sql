@@ -1,6 +1,6 @@
 with cte_addresses as (
     SELECT * 
-    FROM public.addresses
+    FROM {{ source('tutorial', 'addresses') }}
 )
 
 SELECT * FROM cte_addresses

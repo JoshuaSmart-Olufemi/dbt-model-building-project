@@ -1,7 +1,7 @@
 WITH cte_events as (
 
     SELECT * 
-    FROM public.events
+    FROM {{ source('tutorial', 'events') }}
 
 )
 

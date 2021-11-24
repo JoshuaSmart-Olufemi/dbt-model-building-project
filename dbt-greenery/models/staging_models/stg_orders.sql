@@ -9,13 +9,13 @@ WITH cte_orders AS(
      created_at,
      order_cost,
      shipping_cost,
-     order_total,
+     order_total as revenue,
      tracking_id,
      shipping_service,
      estimated_delivery_at,
      delivered_at,
      status as order_status 
-     FROM public.orders
+     FROM {{ source('tutorial', 'orders') }}
 
 )
 
