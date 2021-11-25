@@ -14,7 +14,7 @@ with int_users_orders as (
     sum(order_items.order_quantity) as sum_order_quantity,
     min(order_items.order_quantity) as minimum_order_quantity,
     max(order_items.order_quantity) as maximum_order_quantity,
-    date_part('day',orders.estimated_delivery_at :: timestamp - orders.delivered_at:: timestamp) * 24+ date_part('hour',orders.estimated_delivery_at :: timestamp - orders.delivered_at:: timestamp) as hours_btw_estimated_delivery_and_actual_delivery
+    date_part('day',orders.estimated_delivery_at :: timestamp - orders.delivered_at:: timestamp) * 24+ date_part('hour',orders.estimated_delivery_at :: timestamp - orders.delivered_at:: timestamp) as hrs_btw_estimated_delivery_and_actual_delivery
     FROM {{ref('stg_users')}} as users
     LEFT JOIN {{ref('stg_orders')}} as orders
     ON users.user_id = orders.user_id
