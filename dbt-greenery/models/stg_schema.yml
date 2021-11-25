@@ -15,15 +15,59 @@ models:
           - positive_values
   - name: stg_addresses
     description: Data about each address of customers in the database.
+    columns:
+      - name: address_id
+        tests:
+          - unique
+          - not_null
   - name: stg_events
-    description: Demographics about events in the database.
+    description: Data on each individual event in the database.
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null
+      - name: user_id 
+        tests:
+        - relationships:
+              to: ref('stg_users')
+              field: user_id
+      - name: event_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['delete_from_cart','checkout','page_view','add_to_cart','package_shipped','account_created']
   - name: stg_order_items
     description: Demographics about each item of customers already ordered in the database.
+    columns:
+      - name: order_quantity
+        tests:
+          - not_null
   - name: stg_orders
     description: Demographics about each order of customers in the database.
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: order_status
+        tests:
+          - accepted_values:
+              values: ['shipped','pending','preparing','delivered']
   - name: stg_products
     description: Demographics about each product on offer in the database.
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
   - name: stg_promos
     description: Demographics about available promotions for customers in the database.
   - name: stg_users
     description: Demographics about each user in the database.
+    columns:
+      - name: user_id
+        tests:
+          - unique
+          - not_null
+
