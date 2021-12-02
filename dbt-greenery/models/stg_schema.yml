@@ -77,15 +77,25 @@ models:
         tests:
           - unique
           - not_null
-      - name: sum_order_quantity
+      - name: sum_revenue 
         tests:
           - positive_values
-      - name: sum_revenue
+      - name: sum_order_quantity
         tests:
           - positive_values
   - name: int_users_orders
     description: an intermediate aggregated of users and their respective orders 
-    tests:
-      - positive_values:
-          column_name: "sum_of_revenue|| '-' ||minimum_order_quantity"
+    columns:
+      - name: sum_revenue
+        tests:
+          - positive_values
+      - name: sum_order_quantity
+        tests:
+          - positive_values
+      - name: minimum_order_quantity
+        tests:
+          - positive_values
+      - name: maximum_order_quantity
+        tests:
+          - positive_values
       

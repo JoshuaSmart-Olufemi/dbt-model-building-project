@@ -13,7 +13,7 @@ with int_products_promos as (
     count(distinct(product.product_id)) as number_of_products,
     sum(product.product_price) as sum_product_price,
     sum(product.product_quantity) as sum_product_quantity,
-    sum(promo.promo_discount) as sum_promo_discount_(%)
+    sum(promo.promo_discount) as sum_promo_discount_percentages
     FROM {{ref('stg_products')}} as product
     LEFT JOIN {{ref('stg_promos')}} as promo
     ON product.id = promo.id
