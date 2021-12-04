@@ -5,7 +5,7 @@
 }}
 with int_page_views as (
     select 
-    to_char(created_at,'Month') as Event_Month,
+    {{ dbt_date.month_name('created_at', short=false) }} as month_name,
     event_id,
     user_id,
     session_id,
