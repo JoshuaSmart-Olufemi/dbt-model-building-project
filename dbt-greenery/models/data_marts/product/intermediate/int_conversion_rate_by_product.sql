@@ -1,23 +1,19 @@
 
-with conversion_rate_by_product as (
+with conversion_rate_product as (
     select 
-    products.product_name as product_name,
-    count(events.event_id) as no_visits_to_site,
-    sum(case when events.event_type = 'add_to_cart' then 1 else 0 end):: numeric as count_of_orders
-    from {{ref('stg_events')}} as events
-    left join {{ref('stg_products')}} as products
-    on events.id = products.id
-    group by 1
+    prd.product_name,
+    split_part(page_url,'/',5) as product_guid,
+    cast(sum(case when event_type='checkout'then 1 else  0 end) as float)
+        / cast(count(session_id) as float) con_rate_prod
+    from {{ref('stg_events')}} evn
+    left join {{ref('stg_products')}} prd 
+    on prd.product_id = split_part(page_url,'/',5)
+    group by 1,2
 )
 
-select 
-product_name,
-no_visits_to_site
-,count_of_orders
-,round(count_of_orders/no_visits_to_site*100,2) as conversion_rate_by_product
-from conversion_rate_by_product
-group by 1,2,3
-order by 3
+
+select *
+from conversion_rate_product
 
  
 

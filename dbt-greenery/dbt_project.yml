@@ -32,8 +32,17 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  my_new_project:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+  dbt_greenery:
+    staging:
+      +materialized: view # Leave the staging models as views until we see the necessity to change (many might become incremental at some point)
+
+
+  post-hook:
+    - "{{ grant_select(role='reporting') }}"
+
+on-run-end:
+  - "grant usage on schema {{ schema }} to reporting"
+
+
+
 
