@@ -1,6 +1,4 @@
 {% set event_types = dbt_utils.get_column_values(table=ref('stg_events'), column='event_type')
-
-
 %}
 
 with event_types_per_session as(
