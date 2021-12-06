@@ -28,7 +28,7 @@ final as (
     from conversion_rate_product as a
     left join checkout_event_or_not as b 
     on a.product_name = b.product_name
-    group by 1,2
+    
 )
 
 select * 
