@@ -1,12 +1,12 @@
-
-with conversion_rate as (
-    select
-
-    (cast(sum(case when event_type='checkout'then 1 else  0 end) as float)
-    / cast(count (session_id) as float))*100 as con_rate
-    from {{ref('stg_events')}}
+-- CON RATE: number of sessions that had a checkout event / total number of unique sessions 
+with sessions_with_checkout as (
+    SELECT
+    session_id,
+    MAX(CASE WHEN event_type = 'checkout' THEN 1 ELSE 0 END) has_checkout
+    FROM {{ref('stg_events')}}
+    GROUP BY session_id
 )
 
-select 
-*
-from conversion_rate
+SELECT 
+  SUM(has_checkout)::numeric / COUNT(session_id) as conv_rate
+FROM sessions_with_checkout

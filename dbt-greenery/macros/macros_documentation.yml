@@ -1,0 +1,52 @@
+version: 2
+
+macros:
+  - name: event_type_per_session
+    description: Aggregate event_types by session
+    docs:
+      show: true
+    arguments:
+      - name: event_types
+        type: List[str]
+        description: List of possible event types in a session
+
+  - name: grant_select
+    description: Apply grants select and usage to a specific role
+    docs:
+      show: true
+    arguments:
+      - name: role
+        type: str
+        description: Name of the role
+
+  - name: month_name
+    description: a macro from dbt_date packagefor showing datename portion of a datefield
+    docs:
+      show: true
+    arguments:
+      - name: column_name
+        type: datefield
+        description: a column for date values 
+
+  - name: positive_values
+    description: a macro used to verify columns in a table have values <  0
+    docs:
+      show: true
+    arguments:
+      - name: model
+        type: model
+      - name: column_name
+        type: integer / float
+        description: column containing positive numerical values
+
+  - name: lbs_to_kgs
+    description: a macro converting column values from pounds to kilograms
+    docs:
+      show: true
+    arguments:
+      - name: column_name
+        type: integer
+        description: a column for numerical values 
+      - name: precision
+        type: integer
+        description: number of decimal places. Defaults to 2.
