@@ -17,7 +17,7 @@ with sessions_with_checkout AS (
 , con_rate_by_product_id AS (
     SELECT 
     product_id,
-    SUM(has_checkout)::numeric / COUNT(session_id) AS conv_rate
+    round(SUM(has_checkout)::numeric / COUNT(session_id) *100,2) AS conv_rate
     FROM sessions_with_product
     LEFT JOIN sessions_with_checkout
        USING(session_id)

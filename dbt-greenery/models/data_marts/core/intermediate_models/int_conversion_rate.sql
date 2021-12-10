@@ -8,5 +8,5 @@ with sessions_with_checkout as (
 )
 
 SELECT 
-  SUM(has_checkout)::numeric / COUNT(session_id) as conv_rate
+  ROUND(SUM(has_checkout)::numeric / COUNT(session_id)*100,2) as conv_rate
 FROM sessions_with_checkout
