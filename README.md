@@ -1,8 +1,7 @@
 # Analytics engineering with dbt
 
-Template repository for the projects and environment of the course: Analytics engineering with dbt
-
-> Please note that this sets some environment variables so if you create some new terminals please load them again.
+A project to build data marts for different departments of a business from scratch, validating business logic using dimensional modelling and dbt tests, and building product sales funnel to determine drop-offs in customer engagement during the entire attribution process
+	
 
 ## License
 
